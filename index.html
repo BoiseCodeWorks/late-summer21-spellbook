@@ -21,15 +21,24 @@
             </a>
         </nav>
     </header>
-    <main class="container">
-        <div id="app"></div>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 side-bar-scroll">
+                <h3>All Spells</h3>
+                <ol id="api-spells"></ol>
+            </div>
+            <div class="col-md-6" id="active-spell">
+            </div>
+        </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
             <p><small>Made with love by Codeworks</small></p>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 

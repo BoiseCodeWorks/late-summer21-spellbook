@@ -10695,4 +10695,16 @@ main {
   flex-grow: 1;
 }
 
+.action {
+  cursor: pointer;
+}
+.action:hover {
+  background-color: #c2c2c2;
+}
+
+.side-bar-scroll {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 /*# sourceMappingURL=main.css.map */
