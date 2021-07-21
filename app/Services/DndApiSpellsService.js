@@ -5,7 +5,7 @@ import { dndApi } from "./AxiosService.js"
 class DndApiSpellsService {
   async getAllSpells() {
     let res = await dndApi.get()
-    console.log(res.data.results)
+    // console.log(res.data.results)
     ProxyState.allDndApiSpells = res.data.results
   }
 

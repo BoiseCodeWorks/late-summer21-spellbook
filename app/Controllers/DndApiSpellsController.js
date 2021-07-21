@@ -10,6 +10,10 @@ function _drawAll() {
 }
 
 function _drawActiveSpell() {
+  if (!ProxyState.activeSpell) {
+    document.getElementById('active-spell').innerHTML = '<div class="text-center"><em>No Active Spell</em></div>'
+    return
+  }
   document.getElementById('active-spell').innerHTML = ProxyState.activeSpell.Template
 }
 

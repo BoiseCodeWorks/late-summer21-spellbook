@@ -4,6 +4,8 @@ import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
   allDndApiSpells = []
+  /** @type {Spell[]}*/
+  mySpells = []
   /** @type {Spell}*/
   activeSpell = null
 }
